@@ -678,9 +678,10 @@ div[class="adsbygoogle"][id="ad-detector"] { display: block !important; }</style
      <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Featured Speakers</h2>
      <p class="text-center text-gray-600 mb-12 text-lg">Industry leaders and experts sharing their insights</p><!-- Tab Pills -->
      <div class="flex flex-wrap justify-center gap-3 mb-12">
-	 <button class="tab-button active bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-md" data-tab="keynotes">Keynotes</button>
-	 <button class="tab-button bg-gray-200 text-gray-700 hover:bg-gray-300 px-6 py-3 rounded-full font-semibold" data-tab="special">Special Guests</button>
-	 <button class="tab-button bg-gray-200 text-gray-700 hover:bg-gray-300 px-6 py-3 rounded-full font-semibold" data-tab="technology">Technology & Youth</button>	 
+	 <button class="tab-button active bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-md" data-tab="keynotes">Keynotes</button>	 
+	 <button class="tab-button bg-gray-200 text-gray-700 hover:bg-gray-300 px-6 py-3 rounded-full font-semibold" data-tab="technology">Technology & Youth</button>
+	<button class="tab-button bg-gray-200 text-gray-700 hover:bg-gray-300 px-6 py-3 rounded-full font-semibold" data-tab="alternative">Alternative Investments</button>
+	<button class="tab-button bg-gray-200 text-gray-700 hover:bg-gray-300 px-6 py-3 rounded-full font-semibold" data-tab="special">Special Guests</button>
      </div><!-- Speakers Grid -->
      <div id="speakers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="speaker-card bg-white rounded-xl shadow-lg overflow-hidden">
@@ -831,7 +832,7 @@ div[class="adsbygoogle"][id="ad-detector"] { display: block !important; }</style
          </div>
          <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
           <div class="text-5xl">
-           <img src="images\RSquareTrans002.png" border="0" width="250px" height="75px">
+           <img src="images\ReddysLogo.jpg" border="0" width="250px" height="75px">
           </div>
          </div>
          <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
@@ -1235,18 +1236,21 @@ div[class="adsbygoogle"][id="ad-detector"] { display: block !important; }</style
 
     const speakersData = {
       keynotes: [
-        { name: "Mr. J Challa", title: "Accomplished business leader, technology executive, and entrepreneur", emoji: "👩‍🔬" },
+        { name: "Mr. Jayanth Reddy", title: "Accomplished business leader, technology executive, and entrepreneur", emoji: "👩‍🔬" },
         { name: "Dr. Vasudeva Reddy", title: "NRI Medical Affairs Advisor to Previous AP Government", emoji: "👨‍💼" },
 		{ name: "Mr. Prakash Reddy", title: "The visionary founder and CEO of Sustaino LLC", emoji: "👨‍💼" },
 		{ name: "Mr. Santosh Reddy", title: "Founding partner of Somireddy Law Group", emoji: "👨‍💼" }
       ],
       technology: [
-        { name: "Mr. Poorna", title: "Trends in IT hiring: what does it take to build a successful career in AI infused IT workforce", emoji: "👩‍🔬" },
+        { name: "Mr. Poorna Reddy", title: "Trends in IT hiring: what does it take to build a successful career in AI infused IT workforce", emoji: "👩‍🔬" },
         { name: "Mrs. Reddy", title: "Youth Entrepreneur", emoji: "🎓" }
       ],
+	  alternative: [
+		{ name: "Mr. Mahender Reddy", title: "Founder & CEO of Systech Corp", emoji: "💰" },
+        { name: "Mr. Tirumal Reddy", title: "Founder & CEO of Value Financial Services Inc", emoji: "💰" }     
+      ],
       special: [
-        { name: "Dr. S.Rajendranath Reddy", title: "Agri-Entrepreneur, Organic Farmer & Consultant, and grassroots innovator", emoji: "🌍️" },
-        { name: "Mr. Tirumal Reddy", title: "Founder & CEO of Value Financial Services Inc", emoji: "💰" },
+        { name: "Dr. S.Rajendranath Reddy", title: "Agri-Entrepreneur, Organic Farmer & Consultant, and grassroots innovator", emoji: "🌍️" },        
         { name: "Mr. Radhesh Reddy", title: "Author, Financial Educator & Entrepreneur", emoji: "💰" }
       ]
     };
