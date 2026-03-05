@@ -809,6 +809,68 @@ div[class="adsbygoogle"][id="ad-detector"] { display: block !important; }</style
       </div>
      </div>
 	 
+	 <!-- Platinum 2 -->	 
+	 <div class="mb-10">
+      <h3 class="text-xl font-bold text-center mb-6 text-gray-700">Platinum Sponsors Continued</h3>
+      <div class="relative">
+	  <!-- Left Arrow --> 
+	  <button id="platinum2-prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white hover:bg-gray-100 text-gray-700 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg></button>
+		<!-- Carousel Container -->
+       <div class="overflow-hidden">
+        <div id="platinum2-carousel" class="flex transition-transform duration-500 ease-in-out gap-4">         
+		 <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
+          <div class="text-5xl">           
+			 <img src="images\Sustain.png" border="0" width="450px" height="200px">
+          </div>
+         </div>
+         <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
+          <div class="text-5xl">
+           <img src="images\ssdeepambiotek.jpeg" border="0" width="450px" height="200px">
+          </div>
+         </div>
+         <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
+          <div class="text-5xl">
+           <img src="images\MindScape.png" border="0" width="450px" height="200px">
+          </div>
+         </div> 
+         <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
+          <div class="text-5xl">
+           <img src="images\DishaDwellings.png" border="0" width="450px" height="200px">
+          </div>
+         </div>
+		 <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
+          <div class="text-5xl">           
+			 <img src="images\DishaDwellings.png" border="0" width="450px" height="200px">
+          </div>
+         </div>
+         <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
+          <div class="text-5xl">
+           <img src="images\Somireddy-law-group_logo2.jpeg" border="0" width="450px" height="200px">
+          </div>
+         </div>
+         <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
+          <div class="text-5xl">
+           <img src="images\TopNotch.jpeg" border="0" width="450px" height="200px">
+          </div>
+         </div> 
+         <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
+          <div class="text-5xl">
+           <img src="images\VFS.jpeg" border="0" width="450px" height="200px">
+          </div>
+         </div>
+        </div>
+       </div><!-- Right Arrow --> <button id="platinum2-next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white hover:bg-gray-100 text-gray-700 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg></button>
+      </div><!-- Carousel Dots -->
+      <div class="flex justify-center gap-2 mt-6">
+       <div class="platinum2-dot w-2 h-2 rounded-full bg-blue-600 transition" style="cursor: pointer;"></div>
+       <div class="platinum2-dot w-2 h-2 rounded-full bg-gray-300 transition" style="cursor: pointer;"></div>
+      </div>
+     </div>
+	 
 	 <!-- Diamond -->	 
 	<div class="mb-10">
       <h3 class="text-xl font-bold text-center mb-6 text-gray-700">Diamond Sponsors</h3>
@@ -822,7 +884,7 @@ div[class="adsbygoogle"][id="ad-detector"] { display: block !important; }</style
         <div id="diamond-carousel" class="flex transition-transform duration-500 ease-in-out gap-4">
          <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
           <div class="text-5xl">           
-			 <img src="images\RSquareTrans002.png" border="0" width="250px" height="75px">
+			 <img src="images\RealtyMark-BusinessCard.jpg" border="0" width="250px" height="75px">
           </div>
          </div>
          <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center flex-shrink-0 w-[calc(33.333%-11px)] md:w-[calc(25%-13px)]">
@@ -1468,6 +1530,47 @@ div[class="adsbygoogle"][id="ad-detector"] { display: block !important; }</style
         dot.addEventListener('click', () => {
           platinumCurrentIndex = index;
           updateplatinumCarousel();
+        });
+        dot.style.cursor = 'pointer';
+		});
+		
+	  // Platinum2 Sponsors Carousel
+      const platinum2Carousel = document.getElementById('platinum2-carousel');
+      const platinum2PrevBtn = document.getElementById('platinum2-prev');
+      const platinum2NextBtn = document.getElementById('platinum2-next');
+      const platinum2Dots = document.querySelectorAll('.platinum2-dot');
+      let platinum2CurrentIndex = 0;
+      const platinum2TotalSlides = 2;
+      
+      function updateplatinum2Carousel() {
+        const translateX = platinum2CurrentIndex * -100;
+        platinum2Carousel.style.transform = `translateX(${translateX}%)`;
+        
+        platinum2Dots.forEach((dot, index) => {
+          if (index === platinum2CurrentIndex) {
+            dot.classList.remove('bg-gray-300');
+            dot.classList.add('bg-blue-600');
+          } else {
+            dot.classList.remove('bg-blue-600');
+            dot.classList.add('bg-gray-300');
+          }
+        });
+      }
+      
+      platinum2PrevBtn.addEventListener('click', () => {
+        platinum2CurrentIndex = (platinum2CurrentIndex - 1 + platinum2TotalSlides) % platinum2TotalSlides;
+        updateplatinum2Carousel();
+      });
+      
+      platinum2NextBtn.addEventListener('click', () => {
+        platinum2CurrentIndex = (platinum2CurrentIndex + 1) % platinum2TotalSlides;
+        updateplatinum2Carousel();
+      });
+      
+      platinum2Dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          platinum2CurrentIndex = index;
+          updateplatinum2Carousel();
         });
         dot.style.cursor = 'pointer';
 		});
